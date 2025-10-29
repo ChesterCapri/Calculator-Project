@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="main">
+
+
+  <input class="display" readonly> 
+
+<div class="numbers">
+  <div class="row-one">
+    <button class="button" onclick="clearDisplay()">AC</button>
+    <button class="button" onclick="getNumber('-')">Neg</button>
+    <button class="button" onclick="getNumber('%')">%</button>
+    <button class="button orange" onclick="getNumber(' / ')">/</button>
+  </div>
+
+  <div class="row-two">
+    <button class="button" onclick="getNumber('7')">7</button>
+    <button class="button" onclick="getNumber('8')">8</button>
+    <button class="button" onclick="getNumber('9')">9</button>
+    <button class="button orange" onclick="getNumber(' * ')">X</button>
+</div>
+
+<div class="row-three">
+  <button class="button" onclick="getNumber('4')">4</button>
+  <button class="button" onclick="getNumber('5')">5</button>
+  <button class="button" onclick="getNumber('6')">6</button>
+  <button class="button orange" onclick="getNumber(' - ')">-</button>
+</div>
+
+<div class="row-four">
+  <button class="button" onclick="getNumber('1')">1</button>
+  <button class="button" onclick="getNumber('2')">2</button>
+  <button class="button" onclick="getNumber('3')">3</button>
+  <button class="button orange" onclick="getNumber(' + ')">+</button>
+</div>
+
+<div class="row-five">
+  <button class="button zero" onclick="getNumber('0')">0</button>
+  <button class="button" onclick="getNumber('.')">.</button>
+  <button class="button orange" onclick="calculate()">=</button>
+</div>
+</div>
+ 
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>
